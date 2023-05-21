@@ -10,3 +10,6 @@ To run an example:
 * `cargo run --example ex_04`
 * `cargo run --example ex_05`
 * `cargo run --example ex_06`
+* `cargo run --example ex_07`
+* `cargo run --example ex_08`
+

@@ -71,17 +71,18 @@ struct Fastcat {
 
 impl Animal for Fastcat {
     type Base = Cat;
+    // type Base = &self::base_obj;
+
     fn base(&self) -> Option<&Self::Base> {
-      Some(&Cat {})
+      Some(&self.base_obj)
     }
     fn roam(&self) {
       println!("roaming at {}", &self.speed);
     }
     fn dream(&self) {
-        &self.base().unwrap().dream();
-        println!("they are so slow!")
+        self.base().unwrap().dream();
+        println!("they are so very slow!")
     }
-
 }
 
 trait EndangeredAnimal : Animal {
