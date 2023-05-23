@@ -30,5 +30,7 @@ impl Animal for Cat {
 fn main() {
     let cat = Cat {};
     cat.cry();
+    // this panics
+    // cat.sleep();
     cat.foo();
 }
